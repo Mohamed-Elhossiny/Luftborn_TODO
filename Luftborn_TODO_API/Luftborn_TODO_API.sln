@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luftborn_TODO_API", "Luftborn_TODO_API.csproj", "{801913ED-2DB8-4D46-B22E-64A78232E176}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luftborn_TODO_FE", "..\Luftborn_TODO_FE\Luftborn_TODO_FE.csproj", "{23D0400B-C3AD-47A1-AAF7-4EB2E0E6A9D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{801913ED-2DB8-4D46-B22E-64A78232E176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{801913ED-2DB8-4D46-B22E-64A78232E176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{801913ED-2DB8-4D46-B22E-64A78232E176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{801913ED-2DB8-4D46-B22E-64A78232E176}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23D0400B-C3AD-47A1-AAF7-4EB2E0E6A9D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23D0400B-C3AD-47A1-AAF7-4EB2E0E6A9D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23D0400B-C3AD-47A1-AAF7-4EB2E0E6A9D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23D0400B-C3AD-47A1-AAF7-4EB2E0E6A9D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EB3F9E6-F321-4741-9701-E8B3335E259C}
+	EndGlobalSection
+EndGlobal
