@@ -1,0 +1,76 @@
+<div class="container mt-5">
+  <form [formGroup]="taskForm">
+    <div class="mb-3">
+      <label for="taskTilte" class="form-label">Title</label>
+      <input
+        type="text"
+        class="form-control"
+        id="taskTilte"
+        formControlName="title"
+        [ngClass]="{
+          'border-danger':
+            taskForm.controls['title'].invalid &&
+            (taskForm.controls['title'].dirty ||
+              taskForm.controls['title'].touched)
+        }"
+      />
+      <ng-container>
+        <div
+          class="text-danger"
+          *ngIf="taskForm.get('title')?.hasError('minlength')"
+        >
+          Min length for title is 5 chars
+        </div>
+      </ng-container>
+    </div>
+    <div class="mb-3">
+      <label for="taskDescription" class="form-label"> Description</label>
+      <input
+        type="text"
+        class="form-control"
+        id="taskDescription"
+        formControlName="description"
+        [ngClass]="{
+          'border-danger':
+            taskForm.controls['description'].invalid &&
+            (taskForm.controls['description'].dirty ||
+              taskForm.controls['description'].touched)
+        }"
+      />
+    </div>
+    <div class="form-check mb-3">
+      <input
+        type="checkbox"
+        class="form-check-input"
+        id="isComplete"
+        formControlName="isComplete"
+      />
+      <label class="form-check-label" for="isComplete">Is Complete</label>
+    </div>
+    <div class="button d-flex justify-content-end">
+      <div class="mb-5 me-3">
+        <button
+          *ngIf="!data"
+          class="btn btn-success"
+          (click)="addTask()"
+          [disabled]="taskForm.invalid"
+        >
+          Create
+        </button>
+        <button
+          *ngIf="data"
+          class="btn btn-warning"
+          (click)="updateTask()"
+          [disabled]="taskForm.invalid"
+        >
+          Update
+        </button>
+      </div>
+      <div class="mb-5">
+        <button class="btn btn-danger" (click)="this.matDialog.close()">
+          Close
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
